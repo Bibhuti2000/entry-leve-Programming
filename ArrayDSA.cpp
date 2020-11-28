@@ -77,5 +77,95 @@ int main()
             }
 
 
+    //Sorting algorithms explained here
+
+    //create an unsorted array.
+
+    int us[5] = {3,7,5,9,4};
+
+    // printing the unsorted array.
+
+    printf("Unsorted Linear array --> ");
+
+    for(int i = 0 ; i < 5 ; i++)
+    {
+        printf("%d ,", us[i]);
+    }
+
+        printf("\n");
+
+    //Bubble sort
+
+    for(int i = 0 ; i < 5 ; i++)
+    {
+        for(int j = 0 ; j < 5 - i ; j++)
+        {
+            if(us[j] > us[j+1])
+            {
+                 int temp = us[j+1];
+                 us[j+1] = us[j];
+                 us[j] = temp;
+                 
+            }
+        }
+    }
+       printf("Array sorted using bubble sort --->> ");
+
+     for(int i = 0 ; i < 5 ; i++)
+    {
+        printf("%d ,", us[i]);
+    }
+    
+    
+    printf("\n");
+    
+    
+    //Insertion sort
+    
+    int us2[5]={6,4,1,3,5};
+    int key;
+    
+    // printing the unsorted array.
+
+    printf("Unsorted Linear array --> ");
+
+    for(int i = 0 ; i < 5 ; i++)
+    {
+        printf("%d ,", us2[i]);
+    }
+
+        printf("\n");
+    
+    
+    
+    
+    for(int i = 1 ; i < 5 ; i++)
+    {  key  = us2[i];
+        for(int j = i-1 ;  j >= 0 ; j--)
+        {
+            if(key < us2[j])
+            {
+                int temp = key;
+                 key = us2[j];
+                 us2[j] = temp;
+                 
+            }
+        }
+    }
+    
+    printf("Array sorted using bubble sort --->> ");
+
+     for(int i = 0 ; i < 5 ; i++)
+    {
+        printf("%d ,", us2[i]);
+    }
+    
+    
+    printf("\n");
+    
+
+    
+
+
    return 0 ;
 }
