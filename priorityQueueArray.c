@@ -23,7 +23,7 @@ void heapify(int array[], int size, int i) {
       if( largest != i)
       {
           swap(&array[i] , &array[largest]);
-          heapify(array ,  size , i);
+          heapify(array ,  size , largest);
       }
 
 
