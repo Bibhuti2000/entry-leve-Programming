@@ -6,7 +6,7 @@ void insertion(int ar[] , int index , int item)
     {index =  SIZE + index;}
     ar[index] = item;
 }
-void main()
+int main()
 {
     insertion(circularArray , -1 , 6);
     insertion(circularArray , -2 , 7);
